@@ -1,11 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import airPullutionReducer from './airPullutionReducer';
-
+import artReducer from './artReducer';
 
 const store = configureStore({
   reducer: {
-    airPollutionReducer,
+    artReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk),
 });

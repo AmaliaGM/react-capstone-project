@@ -1,25 +1,28 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import './App.css';
-import Home from './components/Home';
-import Details from './components/Details';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './components/Nav';
+import store from './Redux/ConfigureStore';
+import Details from './pages/Details';
+import Home from './pages/Home';
 
 function App() {
-
   return (
-    <>
-      <Nav />
-        <div className="App">
+    <Provider store={store}>
+      <div className="App">
+        <Nav />
+        <div className="container">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             ;
-            <Route path="/src/components/Details.js" element={<Details />} />
+            <Route path="/details" element={<Details />} />
             ;
           </Routes>
         </div>
-    </>
+      </div>
+    </Provider>
   );
 }
 
