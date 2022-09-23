@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector, connect } from 'react-redux';
 import input from '../API/api';
 
 function Details() {
@@ -10,19 +10,19 @@ function Details() {
     dispatch(input());
   }, [dispatch]);
 
-  let image;
+  let images;
   let id;
   let title;
-  let alttext;
+  let image;
 
-  artWorkList.map((cases) => {
-    if (cases.id === window.location.pathname.slice(1)) {
-      image = cases.image;
-      id = cases.id;
-      title = cases.title;
-      alttext = cases.alt_text;
+  artWorkList.map((art) => {
+    if (art.id === window.location.pathname.slice(1)) {
+      images = art.images;
+      id = art.id;
+      title = art.title;
+      image = art.image;
     }
-    return artWorkList;
+    return art;
   });
 
   return (
@@ -51,7 +51,7 @@ function Details() {
             <h2>
               Art Work Description
             </h2>
-            <p>{alttext}</p>
+            <p>{image}</p>
           </li>
           <li>
             <h2>
@@ -65,4 +65,7 @@ function Details() {
   );
 }
 
-export default Details;
+const mapStateToProps = (state) => ({
+  art: state.artReducer,
+});
+export default connect(mapStateToProps)(Details);

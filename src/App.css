@@ -46,3 +46,9 @@ header {
     transform: rotate(360deg);
   }
 }
+
+.artImage {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
