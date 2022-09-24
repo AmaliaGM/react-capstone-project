@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import img from './images/monet.jpg';
 import back from '../back.png';
 import mic from '../microphone.png';
 import settings from '../settings.png';
@@ -13,9 +12,9 @@ function Nav() {
       </Link>
 
       <header style={{ display: 'flex' }}>
-        <img className="headerImg" src={img} alt="Monet" width={150} />
+        {/*   <img className="headerImg" src={img} alt="Monet" width={150} /> */}
         <div>
-          <h1 className="headerText">Monet Art Work</h1>
+          <h1 className="headerText">Monet Art</h1>
         </div>
       </header>
       <div>

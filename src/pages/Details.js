@@ -27,41 +27,34 @@ import input from '../API/api';
       description = data.description;
     }
     return (
-      <div key={id}>
+      <table key={id} className="table table-striped table-hover mt-5 shadow-1g">
         <div>
           <detNav title={title} />
         </div>
-        <section>
-          <div>
+        <tr>
+          <th>
             <img src={images} alt="" />
-            <h1>
-              {title}
-            </h1>
-          </div>
-          <ul className="details">
-            <li>
-              <h2>
-                Art Work Title
-              </h2>
-              <p>
-                {title}
-              </p>
-            </li>
-            <li>
-              <h2>
-                Art Work Description
-              </h2>
-              <p>{description}</p>
-            </li>
-            <li>
-              <h2>
-                Art Work ID
-              </h2>
-              <p>{id}</p>
-            </li>
-          </ul>
-        </section>
-      </div>
+          </th>
+          <td>
+            {title}
+          </td>
+          <th>
+            Art Work Title
+          </th>
+          <td>
+            {title}
+          </td>
+
+          <th>
+            Art Work Description
+          </th>
+          <td>{description}</td>
+          <th>
+            Art Work ID
+          </th>
+          <td>{id}</td>
+        </tr>
+      </table>
     );
   });
 }
