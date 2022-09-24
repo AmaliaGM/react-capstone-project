@@ -19,6 +19,8 @@ function App() {
           ;
           <Route path="posts/:id" element={<PostDetails />} />
           ;
+          <Route path="/home" element={<Home />} />
+          ;
         </Routes>
       </div>
     </div>

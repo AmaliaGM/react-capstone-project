@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img from './images/monet.jpg';
 import back from '../back.png';
 import mic from '../microphone.png';
@@ -7,9 +8,9 @@ import settings from '../settings.png';
 function Nav() {
   return (
     <div className="navBar">
-      <div>
+      <Link to="../">
         <img src={back} className="back" alt="" />
-      </div>
+      </Link>
 
       <header style={{ display: 'flex' }}>
         <img className="headerImg" src={img} alt="Monet" width={150} />

@@ -1,5 +1,8 @@
 .App {
+  background-color: #e32075;
+  color: white;
   text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .App-logo {
@@ -8,6 +11,7 @@
 }
 
 header {
+  background-color: #e32074d6;
   justify-content: center;
   margin: 5%;
   align-items: center;
@@ -17,15 +21,18 @@ header {
 .microphone,
 .settings {
   width: 30%;
+  color: white;
 }
 
 .headerText {
+  color: white;
   text-align: center;
-  font-size: 100%;
+  font-size: 120%;
   margin-left: 5%;
 }
 
 .navBar {
+  background-color: #e32074d1;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -38,7 +45,7 @@ header {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #e32075;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -46,10 +53,6 @@ header {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -67,6 +70,9 @@ div.container {
   height: 50%;
   width: 100%;
   text-align: center;
+  background-color: #e32075;
+  color: white;
+  justify-content: center;
 }
 
 .artwork {
@@ -93,6 +99,8 @@ div.container {
   flex-grow: 0;
   flex-shrink: 1;
   justify-content: space-between;
+  background-color: #e32075;
+  color: white;
 }
 
 .card {
@@ -103,14 +111,18 @@ div.container {
   flex-shrink: 1;
   width: 50%;
   justify-content: space-between;
+  background-color: #e32075;
+  color: white;
 }
 
 h1.displayTitle {
   text-decoration: underline;
-  color: gray;
   display: flex;
   font-size: 140%;
+  font-weight: bold;
   text-align: center;
+  color: white;
+  background-color: #e32075;
 }
 
 .post-details {
@@ -119,9 +131,12 @@ h1.displayTitle {
 
 a.detailsLink {
   text-decoration: none;
+  background-color: #e32075;
+  color: white;
 }
 
 .brush {
+  color: white;
   width: 10%;
 }
 
