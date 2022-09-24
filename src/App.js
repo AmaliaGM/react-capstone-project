@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import Details from './pages/Details';
+import PostDetails from './pages/post/[id]';
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           ;
-          <Route path="/details" element={<Details />} />
+          <Route path="/Details" element={<Details />} />
+          ;
+          <Route path="posts/:id" element={<PostDetails />} />
           ;
         </Routes>
       </div>

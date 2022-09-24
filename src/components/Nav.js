@@ -1,14 +1,27 @@
 import React from 'react';
 import img from './images/monet.jpg';
+import back from '../back.png';
+import mic from '../microphone.png';
+import settings from '../settings.png';
 
 function Nav() {
   return (
-    <header style={{ display: 'flex' }}>
-      <img className="headerImg" src={img} alt="Monet" width={150} />
+    <div className="navBar">
       <div>
-        <h1 className="headerText">Monet Art Work</h1>
+        <img src={back} className="back" alt="" />
       </div>
-    </header>
+
+      <header style={{ display: 'flex' }}>
+        <img className="headerImg" src={img} alt="Monet" width={150} />
+        <div>
+          <h1 className="headerText">Monet Art Work</h1>
+        </div>
+      </header>
+      <div>
+        <img src={mic} className="microphone" alt="" />
+        <img src={settings} className="settings" alt="" />
+      </div>
+    </div>
   );
 }
 

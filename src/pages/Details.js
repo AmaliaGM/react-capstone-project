@@ -14,27 +14,27 @@ function Details({ art }) {
   let id;
   let title;
   let description;
- 
+
   artList.map((data) => {
-     console.log(data)
-     if (data.id === window.location.pathname.slice(1)) {
+    console.log(data);
+    if (data.id === window.location.pathname.slice(1)) {
       console.log(data.title);
 
       images = data.images;
       id = data.id;
       title = data.title;
-      description = data.description; 
-     }
+      description = data.description;
+    }
     return (
-      <div key={data.id}>
+      <div key={id}>
         <div>
-        <detNav title={title} />
+          <detNav title={title} />
         </div>
         <section>
           <div>
-            <img src={data.images} alt="" />
+            <img src={images} alt="" />
             <h1>
-              {data.title}
+              {title}
             </h1>
           </div>
           <ul className="details">
@@ -43,20 +43,20 @@ function Details({ art }) {
                 Art Work Title
               </h2>
               <p>
-                {data.title}
+                {title}
               </p>
             </li>
             <li>
               <h2>
                 Art Work Description
               </h2>
-              <p>{data.description}</p>
+              <p>{description}</p>
             </li>
             <li>
               <h2>
                 Art Work ID
               </h2>
-              <p>{data.id}</p>
+              <p>{id}</p>
             </li>
           </ul>
         </section>
@@ -65,8 +65,8 @@ function Details({ art }) {
   });
 }
 
-/* const mapStateToProps = (state) => ({
+const mapStateToProps = (state) => ({
   art: state.artReducer,
 });
- */
-export default /* connect(mapStateToProps) */(Details);
+
+export default connect(mapStateToProps)(Details);

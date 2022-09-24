@@ -13,8 +13,20 @@ header {
   align-items: center;
 }
 
+.back, .microphone, .settings {
+  width: 30%;
+}
+
 .headerText {
   text-align: center;
+  font-size: 300%;
+  margin-left: 5%;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -49,11 +61,71 @@ header {
 
 div.container {
   display: flex;
+  height: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.artwork {
+  width: 100%;
+  height: auto;
+}
+
+.artPicture {
+  display: flex;
+  width: 100%;
+  height: auto;
   flex-wrap: wrap;
 }
 
-.artImage {
-  display: flex;
+.cardDetail {
   width: 100%;
+  height: auto;
+}
+
+#card {
+  display: flex;
+  flex-basis: auto;
   flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 1;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.headerText {
+  font-size: 100%;
+}
+
+h1.displayTitle {
+  text-decoration: underline;
+  color: gray;
+  display: flex;
+  font-size: 140%;
+  text-align: center;
+}
+
+.post-details {
+  margin-left: -15%;
+}
+
+a.detailsLink {
+  text-decoration: none;
+}
+
+.brush {
+  width: 10%;
+}
+
+.detailsLink {
+  text-decoration: none;
 }

@@ -40,22 +40,22 @@ function Home({ art }) {
             }
             return data;
           }).map((data) => (
-            <Link key={data.id} className="card" to={`/${data.id}`}>
+            <Link key={data.id} className="card" to={`/posts/${data.id}`}>
               <div className="artImage" key={data.id}>
                 <div>
                   <img className="artPicture" src={data.images} height="250" width="250" alt="monet work" />
                   <p>{data.image}</p>
-                  <Link to="/Details">
-                    Click here for Details
+                  <div className="detailsLink" to="/Details">
+                    Click on the Image for more Details
                     <img src={img} className="brush" alt="brush" />
-                  </Link>
+                  </div>
                 </div>
               </div>
-              <article>
-                <h1>
+              <div>
+                <h1 className="displayTitle">
                   {data.title}
                 </h1>
-              </article>
+              </div>
             </Link>
           ))
         )}
