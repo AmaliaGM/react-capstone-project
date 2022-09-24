@@ -85,6 +85,13 @@ div.container {
   width: 100%;
   height: auto;
   flex-wrap: wrap;
+  background-color: #e32075;
+  color: white;
+}
+
+.between {
+  background-color: #e32075;
+  color: white;
 }
 
 .cardDetail {
@@ -103,13 +110,20 @@ div.container {
   color: white;
 }
 
+a.card {
+  background-color: #e32075;
+  color: white;
+  border: none;
+  margin: 2%;
+}
+
 .card {
   display: flex;
   flex-basis: auto;
   flex-wrap: wrap;
   flex-grow: 0;
   flex-shrink: 1;
-  width: 50%;
+  width: 45%;
   justify-content: space-between;
   background-color: #e32075;
   color: white;

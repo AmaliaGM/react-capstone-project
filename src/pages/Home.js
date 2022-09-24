@@ -43,7 +43,7 @@ import img from '../paintbrush.png';
           }).map((data) => (
             <Link key={data.id} className="card" to={`/posts/${data.id}`}>
               <div className="artImage" key={data.id}>
-                <div>
+                <div className="between">
                   <img className="artPicture" src={data.images} height="250" width="250" alt="monet work" />
                   <p>{data.image}</p>
                   <div className="detailsLink" to="/Details">
