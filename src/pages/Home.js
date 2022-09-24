@@ -5,7 +5,8 @@ import input from '../API/api';
 import Loading from '../components/Loading';
 import img from '../paintbrush.png';
 
-function Home({ art }) {
+// eslint-disable-next-line
+          function Home({ art }) {
   const artWorkList = useSelector((state) => state.artReducer);
   const dispatch = useDispatch();
   const [allData, setAllData] = useState([]);

@@ -13,13 +13,15 @@ header {
   align-items: center;
 }
 
-.back, .microphone, .settings {
+.back,
+.microphone,
+.settings {
   width: 30%;
 }
 
 .headerText {
   text-align: center;
-  font-size: 300%;
+  font-size: 100%;
   margin-left: 5%;
 }
 
@@ -54,6 +56,7 @@ header {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -100,10 +103,6 @@ div.container {
   flex-shrink: 1;
   width: 50%;
   justify-content: space-between;
-}
-
-.headerText {
-  font-size: 100%;
 }
 
 h1.displayTitle {
