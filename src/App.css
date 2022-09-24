@@ -47,6 +47,11 @@ header {
   }
 }
 
+div.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .artImage {
   display: flex;
   width: 100%;

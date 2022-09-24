@@ -1,21 +1,20 @@
 import axios from 'axios';
 
 const input = () => async (dispatch) => {
-  const artWork = await axios.get('https://openaccess-api.clevelandart.org/api/artworks/?q=monet&skip=2&limit=10&indent=1', {
+  const artWork = await axios.get('https://api.artic.edu/api/v1/artworks/16568/manifest.json', {
     headers: {
       'x-api-key': '',
     },
   });
   const arr = [];
   /*   console.log(artWork);
-  arr.push(artWork.data.data); */
-  console.log(arr);
+  arr.push(artWork.data.data);
+ */ console.log(arr);
   artWork.data.data.map((element) => arr.push({
     title: element.title,
-    image: element.thombstone,
-    images: element.images.web.url,
+    image: element.thumbnail.alt_text,
+    images: element.thumbnail.img_id,
     id: element.id,
-    description: element.wall_description,
   }));
 
   dispatch({

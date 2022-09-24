@@ -3,6 +3,7 @@ import { useDispatch, useSelector, connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import input from '../API/api';
 import Loading from '../components/Loading';
+import img from '../paintbrush.png';
 
 function Home({ art }) {
   const artWorkList = useSelector((state) => state.artReducer);
@@ -37,21 +38,23 @@ function Home({ art }) {
             } if (data.title.toLowerCase().includes('allData'.toLowerCase())) {
               return data;
             }
-            return artWorkList;
+            return data;
           }).map((data) => (
             <Link key={data.id} className="card" to={`/${data.id}`}>
               <div className="artImage" key={data.id}>
                 <div>
-                  <img className="artPicture" src={data.images} height="500" width="500" alt="monet work" />
+                  <img className="artPicture" src={data.images} height="250" width="250" alt="monet work" />
                   <p>{data.image}</p>
-                  <i className="brush" aria-hidden="true" />
+                  <Link to="/Details">
+                    Click here for Details
+                    <img src={img} className="brush" alt="brush" />
+                  </Link>
                 </div>
               </div>
               <article>
                 <h1>
                   {data.title}
                 </h1>
-                <i />
               </article>
             </Link>
           ))
