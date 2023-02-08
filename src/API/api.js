@@ -7,22 +7,21 @@ const input = () => async (dispatch) => {
     },
   });
   const arr = [];
-  /*   console.log(artWork);
-  arr.push(artWork.data.data); */
   console.log(arr);
   artWork.data.data.map((element) => arr.push({
     title: element.title,
     image: element.thombstone,
-    images: element.images.web.url,
+    images: element.images.web,
     id: element.id,
     description: element.wall_description,
-  }));
+  })
+  );
 
   dispatch({
     type: 'react-capstone-project/api/GET_ARTWORK',
     arr,
   });
-  // return arr;
+  
 };
 
 export default input;

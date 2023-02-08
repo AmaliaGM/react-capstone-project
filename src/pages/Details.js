@@ -17,10 +17,7 @@ import input from '../API/api';
   let description;
 
   artList.map((data) => {
-    console.log(data);
     if (data.id === window.location.pathname.slice(1)) {
-      console.log(data.title);
-
       images = data.images;
       id = data.id;
       title = data.title;

@@ -6,15 +6,14 @@ import Loading from '../components/Loading';
 import img from '../paintbrush.png';
 
 // eslint-disable-next-line
-          function Home({ art }) {
+          function Home() {
   const artWorkList = useSelector((state) => state.artReducer);
   const dispatch = useDispatch();
   const [allData, setAllData] = useState([]);
 
   useEffect(() => {
     dispatch(input());
-  }, [dispatch]);
-  console.log(art);
+  }, []);
 
   return (
     <div className="artwork">
@@ -36,7 +35,7 @@ import img from '../paintbrush.png';
              if (allData === '') {
               return data;
               // eslint-disable-next-line
-            } if (data.title.toLowerCase().includes('allData'.toLowerCase())) {
+              } if (data.title.toLowerCase().includes('allData'.toLowerCase())) {
               return data;
             }
             return data;
@@ -44,7 +43,8 @@ import img from '../paintbrush.png';
             <Link key={data.id} className="card" to={`/posts/${data.id}`}>
               <div className="artImage" key={data.id}>
                 <div className="between">
-                  <img className="artPicture" src={data.images} height="250" width="250" alt="monet work" />
+                  <img className="artPicture" src={data.images === undefined ? '../notAvaiable.png' : 
+data.images.url} height="250" width="250" alt="monet work" />
                   <p>{data.image}</p>
                   <div className="detailsLink" to="/Details">
                     Click on the Image for more Details

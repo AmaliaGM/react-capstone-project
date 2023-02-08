@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 const PostDetails = () => {
   const [post, setPost] = useState('');
   const { id } = useParams();
-  console.log(post);
   useEffect(() => {
     // Fetch openaccess API
     fetch(`https://openaccess-api.clevelandart.org/api/artworks/${id}`)

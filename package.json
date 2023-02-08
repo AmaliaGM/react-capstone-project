@@ -19,7 +19,7 @@
     "react-scripts": "^5.0.1",
     "react-test-renderer": "^18.2.0",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.4.1",
+    "redux-thunk": "^2.4.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -62,5 +62,16 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "description": "https://www.loom.com/share/f9e244b365974c45b1271b7401816001\r ## React Capstone Project\r This React capstone project is about building a mobile web application to check a list that created making use of React and Redux.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmaliaGM/react-capstone-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmaliaGM/react-capstone-project/issues"
   }
 }

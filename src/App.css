@@ -28,10 +28,11 @@ header {
 .headerText {
   color: white;
   text-align: center;
-  font-size: 100%;
   margin-left: 5%;
   width: 100%;
   align-self: center;
+  font-size: 200%;
+  font-weight: bold;
 }
 
 .navBar {
@@ -159,4 +160,9 @@ a.detailsLink {
 
 .detailsLink {
   text-decoration: none;
+}
+
+img {
+  margin-left: 10%;
+  max-width: 90%;
 }
