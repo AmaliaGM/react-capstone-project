@@ -43,8 +43,14 @@ import img from '../paintbrush.png';
             <Link key={data.id} className="card" to={`/posts/${data.id}`}>
               <div className="artImage" key={data.id}>
                 <div className="between">
-                  <img className="artPicture" src={data.images === undefined ? '../notAvaiable.png' : 
-data.images.url} height="250" width="250" alt="monet work" />
+                  <img
+                    className="artPicture"
+                    src={data.images === undefined ? '../notAvaiable.png'
+                      : data.images.url}
+                    height="250"
+                    width="250"
+                    alt="monet work"
+                  />
                   <p>{data.image}</p>
                   <div className="detailsLink" to="/Details">
                     Click on the Image for more Details

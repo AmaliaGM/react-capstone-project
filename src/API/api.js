@@ -14,14 +14,11 @@ const input = () => async (dispatch) => {
     images: element.images.web,
     id: element.id,
     description: element.wall_description,
-  })
-  );
-
+  }));
   dispatch({
     type: 'react-capstone-project/api/GET_ARTWORK',
     arr,
   });
-  
 };
 
 export default input;
