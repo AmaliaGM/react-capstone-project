@@ -1,0 +1,168 @@
+.App {
+  background-color: #247ddc;
+  color: white;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+header {
+  background-color: #1e64ae;
+  justify-content: center;
+  margin: 5%;
+  align-items: center;
+  height: 0.05rem;
+}
+
+.back,
+.microphone,
+.settings {
+  width: 15%;
+  color: white;
+}
+
+.headerText {
+  color: white;
+  text-align: center;
+  margin-left: 5%;
+  width: 100%;
+  align-self: center;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.navBar {
+  background-color: #1e64ae;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #247ddc;
+  height: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div.container {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  background-color: #247ddc;
+  color: white;
+  justify-content: center;
+}
+
+.artwork {
+  width: 100%;
+  height: auto;
+}
+
+.artPicture {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  background-color: #247ddc;
+  color: white;
+}
+
+.between {
+  background-color: #247ddc;
+  color: white;
+}
+
+.cardDetail {
+  width: 100%;
+  height: auto;
+}
+
+#card {
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 1;
+  justify-content: space-between;
+  background-color: #247ddc;
+  color: white;
+}
+
+a.card {
+  background-color: #247ddc;
+  color: white;
+  border: none;
+  margin: 2%;
+}
+
+.card {
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 45%;
+  justify-content: space-between;
+  background-color: #247ddc;
+  color: white;
+}
+
+h1.displayTitle {
+  text-decoration: underline;
+  display: flex;
+  font-size: 140%;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #247ddc;
+}
+
+.post-details {
+  margin-left: -15%;
+}
+
+a.detailsLink {
+  text-decoration: none;
+  background-color: #247ddc;
+  color: white;
+}
+
+.brush {
+  color: white;
+  width: 10%;
+}
+
+.detailsLink {
+  text-decoration: none;
+}
+
+img {
+  margin-left: 10%;
+  max-width: 90%;
+}
