@@ -13,7 +13,7 @@ JavaScript
 Live Demo Link
 
 ## Getting Started
-Clone this repo: https://github.com/AmaliaGM/MathMagician
+Clone this repo: https://github.com/AmaliaGM/react-capstone-project
 
 the run:
 
