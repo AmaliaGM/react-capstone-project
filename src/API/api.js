@@ -7,7 +7,6 @@ const input = () => async (dispatch) => {
     },
   });
   const arr = [];
-  console.log(arr);
   artWork.data.data.map((element) => arr.push({
     title: element.title,
     image: element.thombstone,
