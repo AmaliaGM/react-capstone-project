@@ -1,4 +1,7 @@
-https://www.loom.com/share/f9e244b365974c45b1271b7401816001
+[Loom video](https://www.loom.com/share/f9e244b365974c45b1271b7401816001)
+
+[Monet Art Work](https://jazzy-faloodeh-b9e7d8.netlify.app/)
+
 ## React Capstone Project
 This React capstone project is about building a mobile web application to check a list that created making use of React and Redux.
 
@@ -10,7 +13,7 @@ CSS
 JavaScript 
 
 ## Live Demo (if available)
-Live Demo Link
+[Live Demo Link](https://www.loom.com/share/f9e244b365974c45b1271b7401816001)
 
 ## Getting Started
 Clone this repo: https://github.com/AmaliaGM/react-capstone-project
