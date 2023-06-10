@@ -5,17 +5,18 @@
 ## React Capstone Project
 This React capstone project is about building a mobile web application to check a list that created making use of React and Redux.
 
-## Built With
+### Built With
 React
 Redux
 HTML 
 CSS 
 JavaScript 
 
-## Live Demo (if available)
-[Live Demo Link](https://www.loom.com/share/f9e244b365974c45b1271b7401816001)
+### 🚀 Live Demo <a name="live-demo"></a>
 
-## Getting Started
+- [Live Demo Link](https://jazzy-faloodeh-b9e7d8.netlify.app/)
+
+### 💻 Getting Started <a name="getting-started"></a>
 Clone this repo: https://github.com/AmaliaGM/react-capstone-project
 
 the run:
@@ -26,17 +27,33 @@ The npm install command installs all dependencies used in the project while npm 
 
 To get a local copy up and running follow these simple example steps.
 
-## Prerequisites
-Basic Knowledge of Javascript
-Basic Css or Scss
-Previously expirience with React
+#### - Prerequisites
+- Basic Knowledge of Javascript
+- Basic Css or Scss
+- Previous expirience with React
+
+
+#### - Setup
+
+Clone this repository to your desired folder:
+https://github.com/AmaliaGM/react-capstone-project
+
+#### - Usage
+
+To run the project, go to the newly created folder. Just type this command to navigate to the new folder:
+cd react-capstone-project
+
+#### - Deployment
+
+You can deploy this project using:
+Netlify
 
 ## Author
 👤 Amalia Gomez Moro
 
-GitHub: @AmaliaGM
-Twitter: @AmaliaGomezMoro
-LinkedIn: Maria Amalia Gomez Moro
+- [GitHub:](https://github.com/AmaliaGM)
+- [Twitter:](https://twitter.com/AmaliaGomezMoro)
+- [LinkedIn:](https://www.linkedin.com/in/maria-amalia-gomez-moro)
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
@@ -48,8 +65,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 Hat tip to anyone whose code was used
-Inspiration
-etc
+
 ## 📝 License
 This project is MIT licensed.
 
