@@ -23,7 +23,7 @@ const PostDetails = () => {
             {post.technique}
           </p>
           <div>{post.collection}</div>
-          <div>
+          <div class='funfact'>
             Fun fact:
             {post.fun_fact}
           </div>

@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector, connect } from 'react-redux';
 import input from '../API/api';
 
-// eslint-disable-next-line
-  function Details({ art }) {
+function Details() {
   const artList = useSelector((state) => state.artReducer);
   const dispatch = useDispatch();
 

@@ -5,11 +5,14 @@ import input from '../API/api';
 import Loading from '../components/Loading';
 import img from '../paintbrush.png';
 
-// eslint-disable-next-line
-          function Home() {
+function Home() {
   const artWorkList = useSelector((state) => state.artReducer);
   const dispatch = useDispatch();
   const [allData, setAllData] = useState([]);
+  const [search, setSearch]= useState("");
+  const handleChange = e => {
+    console.log("Busqueda:" + e.target.value);
+  }
 
   useEffect(() => {
     dispatch(input());
@@ -21,21 +24,18 @@ import img from '../paintbrush.png';
         <input
           id="search"
           type="text"
-          placeholder="Search for a piece of art"
-          onChange={(event) => setAllData(event.target.value)}
+          placeholder="Search for a Monet piece of art"
+          onChange={handleChange}
         />
       </div>
       <div id="card">
         {artWorkList.length <= 1 ? (
           <Loading />
         ) : (
-          // eslint-disable-next-line
           artWorkList.filter((data) => {
-            // eslint-disable-next-line
-             if (allData === '') {
+            if (allData === '') {
               return data;
-              // eslint-disable-next-line
-              } if (data.title.toLowerCase().includes('allData'.toLowerCase())) {
+            } if (data.title.toLowerCase().includes('allData'.toLowerCase())) {
               return data;
             }
             return data;

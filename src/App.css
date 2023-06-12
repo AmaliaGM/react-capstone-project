@@ -128,7 +128,6 @@ a.card {
   flex-grow: 0;
   flex-shrink: 1;
   width: 45%;
-  justify-content: space-between;
   background-color: #247ddc;
   color: white;
 }
@@ -144,7 +143,7 @@ h1.displayTitle {
 }
 
 .post-details {
-  margin-left: -15%;
+  margin: auto;
 }
 
 a.detailsLink {
@@ -162,7 +161,12 @@ a.detailsLink {
   text-decoration: none;
 }
 
+.funfact {
+  text-align: center;
+  justify-content: center;
+}
+
 img {
-  margin-left: 10%;
-  max-width: 90%;
+  margin-left: 0%;
+  max-width: 100%;
 }
