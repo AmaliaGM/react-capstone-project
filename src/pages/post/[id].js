@@ -16,7 +16,7 @@ const PostDetails = () => {
     <div className="post-details">
       {post && (
         <article>
-          <h2>{post.title}</h2>
+          <h2 className='picTitle'>{post.title}</h2>
           <p>
             Artwork Technique:
             {' '}

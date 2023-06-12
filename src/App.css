@@ -130,6 +130,7 @@ a.card {
   width: 45%;
   background-color: #247ddc;
   color: white;
+  align-items: center;
 }
 
 h1.displayTitle {
@@ -161,9 +162,14 @@ a.detailsLink {
   text-decoration: none;
 }
 
+.picTitle {
+  margin: 4%;
+}
+
 .funfact {
   text-align: center;
   justify-content: center;
+  margin: 5%;
 }
 
 img {
