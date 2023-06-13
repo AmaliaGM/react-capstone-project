@@ -16,14 +16,14 @@ const PostDetails = () => {
     <div className="post-details">
       {post && (
         <article>
-          <h2 className='picTitle'>{post.title}</h2>
+          <h2 className="picTitle">{post.title}</h2>
           <p>
             Artwork Technique:
             {' '}
             {post.technique}
           </p>
           <div>{post.collection}</div>
-          <div class='funfact'>
+          <div className="funfact">
             Fun fact:
             {post.fun_fact}
           </div>
