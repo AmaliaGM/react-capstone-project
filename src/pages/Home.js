@@ -12,15 +12,12 @@ function Home() {
 
   const searcher = (e) => {
     setSearch(e.target.value);
-    console.log(e.target.value);
   };
 
-  let results = [];
-  if (!search) {
-    results = artWorkList;
-  } else {
-    results = artWorkList.filter((data) => data.title.toLowerCase().includes(search.toLowerCase()));
-  }
+  // filter search: if dif from search = artworklist ,else, filter
+  const results = !search ? artWorkList : artWorkList.filter(
+    (data) => data.title.toLowerCase().includes(search.toLowerCase()),
+  );
 
   useEffect(() => {
     dispatch(input());

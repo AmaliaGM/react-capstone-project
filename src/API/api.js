@@ -6,6 +6,7 @@ const input = () => async (dispatch) => {
       'x-api-key': '',
     },
   });
+
   const arr = [];
   artWork.data.data.map((element) => arr.push({
     title: element.title,
